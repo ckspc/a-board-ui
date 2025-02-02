@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# A-Board
 
-## Getting Started
+A-Board is built with Next.js framework for developing efficient and scalable web applications.
 
-First, run the development server:
+## Features
 
+- 🔐 **Authentication System**
+  - Sign-up system
+  - Sign-in status tracking
+  
+## Dependencies (Non-Built-in Next.js Packages)
+
+### State Management
+- **Zustand** (^5.0.3)
+  - Lightweight state management
+  - Simple to use, minimal boilerplate
+  - High performance
+  - Perfect for small to medium applications
+
+### HTTP Client
+- **Axios** (^1.7.9)
+  - Promise-based HTTP client
+  - Automatic transforms for request and response data
+  - Client-side protection from XSRF
+  - Progress tracking for uploads and downloads
+
+### UI Components and Icons
+- **Lucide React** (^0.474.0)
+  - Beautiful and consistent icon set
+  - Customizable size and colors
+  - Wide variety of icons available
+  - Optimized for React
+
+### Loading States
+- **React Loader Spinner** (^6.1.6)
+  - Various loading animations
+  - Customizable colors and sizes
+  - Responsive and accessible
+  - Easy integration with React components
+
+### Date Management
+- **Day.js** (^1.11.13)
+  - Modern date utility library
+  - Lightweight alternative to Moment.js
+  - Chainable operations
+  - Extensive plugin system
+
+## Installation
+
+1. Clone repository:
 ```bash
+git clone <repository-url>
+cd a-board
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Set up environment variables:
+```bash
+cp .env.example .env.local
+# Edit .env.local with your configuration
+```
+
+## Running the Project
+
+### Development Mode
+```bash
+# Run in development mode
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Production Mode
+```bash
+# Create production build
+npm run build
+# or
+yarn build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Run production server
+npm run start
+# or
+yarn start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+src/
+├── app/             # Application pages
+├── components/      # React components
+├── lib/            # Utility functions and configurations
+├── store/          # Zustand stores
+└── types/          # TypeScript type definitions
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Development and Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Fork repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
